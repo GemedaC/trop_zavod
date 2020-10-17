@@ -56,7 +56,6 @@ void input(FILE *dv)
 
 		printf("Gradebook number : ");
 		scanf("%d", &pp1.grade_book);
-<<<<<<< HEAD
 
 		for(i = 0; i <= 3; i++)
 		{
@@ -69,10 +68,8 @@ void input(FILE *dv)
 		printf("end? y/n\n");
 
 		ch = getch();
-=======
-		
->>>>>>> ba3132703abcb8d96a6983665414f4c70d968d19
 	}
+	
 	while(ch == 'n');
 
 	fclose(dv);
