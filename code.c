@@ -38,3 +38,27 @@ int main()
 		}
 	}
 }
+
+void input(FILE *dv)
+{
+	int i, gb;
+	char ch;
+	dv = fopen("jurnal.dat", "wb");
+
+	system("CLS");
+
+	printf("Enter student.\n");
+
+	do
+	{
+		printf("\nStrudent surname : ");
+		scanf("%s", &pp1.surname);
+
+		printf("Gradebook number : ");
+		scanf("%d", &pp1.grade_book);
+		
+	}
+	while(ch == 'n');
+
+	fclose(dv);
+}
