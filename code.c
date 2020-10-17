@@ -56,7 +56,18 @@ void input(FILE *dv)
 
 		printf("Gradebook number : ");
 		scanf("%d", &pp1.grade_book);
-		
+
+		for(i = 0; i <= 3; i++)
+		{
+			printf("Enter %d number grade : ", i + 1);
+			gb = scanf("%d", &pp1.grade[i]);
+		}
+
+		fwrite(&pp1, sizeof(pp1), 1, dv);
+
+		printf("end? y/n\n");
+
+		ch = getch();
 	}
 	while(ch == 'n');
 
